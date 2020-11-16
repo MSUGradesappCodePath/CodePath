@@ -45,7 +45,6 @@ An app for students at Michigan State University to make new friends and interac
    
 * Login screen
    *  Upon Reopening of the application, the user is prompted to log in to gain access to their profile information to be properly matched with another person as well as witness a bulletin board with the ongoing activities.
-   * ...
 
 * Match of the Day screen
    * Shows the user who they have been matched for the day and an option to check their profile
@@ -101,7 +100,7 @@ An app for students at Michigan State University to make new friends and interac
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src= 'https://www.figma.com/file/Fq43nXRME5tpWumN9VBE3X/MSU-Student-Link?node-id=0%3A1' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src= 'https://ibb.co/9vybVDX1' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### [BONUS] Interactive Prototype
 <img src= 'http://g.recordit.co/I2ZyaNiwZa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
