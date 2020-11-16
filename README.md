@@ -101,7 +101,7 @@ An app for students at Michigan State University to make new friends and interac
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src= 'https://photos.app.goo.gl/9UrFfp2YSehgLW1W9' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src= 'https://lh3.googleusercontent.com/BkQwwe1lShQsjskKGamYqzpUpDToWIhoO6xdDPfIGGlEv2kFIe7tx1IcijYf1yG9OwWIMZ1VXvHrJgBlxvxJwfuzw0zIWshHSRc-ZK5fCzS7ZD76MtEed3aCAXeuqpk2wsKHkLe5mVYufiHxxHJwXuB9VYjFWFGmRug455m1Qv6dkXdx_UJDhOQ_te5_gKx5uTi0AeHUu-WUgTOJcfeXdwsIReDlDm0frM4oIMZCtnWfbvWBkwGaCdPpmoIQQibrm-tjIf-lPAcoHf8o4tWkxVd7CHShNiWPAx3kXcbb-kqY7XYlXRUauZ4ZnYRLV8isui1ER9dr-ogKNeitCggOMpTsQR4ZfSQfQnFtkr1N1HnCKI8TXRyvqVONgSxRX1q2NzkhLGOc9AukIFF2o0riYt0j9iBsfNKV8qW3feaB-W_ocm7V_xQummOkJtaidkKDhkMVTQJTtFB7dzU_OAzfXKvT17VP70V4R-8Er7vnNwOd_upELAlZbaRMTtMa7IvfJjH0i-L2Y1-czTyNcRmZrWaCCBpg0LPz0nJeyyG7WEXW6wLvqIHzPODS7tIuvzULdOeBwcu1X0i6KGwvdlgg0DML1caw2aJicc1W5wxm9OSEly_bLqjRfLLD9WdsTgV3ZkB18x9HXwp0YUJwWVnZUxtSE2xCdjwv8GMVOIMtmKoiy7Gi-6iP2ckitKNgZYg=w1177-h651-no?authuser=0' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### [BONUS] Interactive Prototype
 <img src= 'http://g.recordit.co/I2ZyaNiwZa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
