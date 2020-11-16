@@ -101,7 +101,7 @@ An app for students at Michigan State University to make new friends and interac
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src= 'https://www.linkpicture.com/view.php?img=LPic5fb303478916d253153872' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src= 'https://photos.app.goo.gl/9UrFfp2YSehgLW1W9' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### [BONUS] Interactive Prototype
 <img src= 'http://g.recordit.co/I2ZyaNiwZa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
