@@ -54,15 +54,16 @@ An app for students at Michigan State University to make new friends and interac
     
 * View comments in a post
     * Allows user to view all the user interested in that particular event and their thoughts about it, allowing the student to make a well-informed decision if whether they want to attend the event or not.
-    * ...
+    
 * Profile 
     * User is able to view the other user's profile if they tap on their profile picture
  
 * Editing profile
     * Allows user to upload a photo and fill in information about their major, their year and a small introduction about themselves
-    * ...
+    
 * Private messaging
     * Messaging between the user and the randomly matched user for the day
+    
 * Previous history chat history
     * Message history of the user's previous matches and the people they interacted with
 
@@ -100,7 +101,7 @@ An app for students at Michigan State University to make new friends and interac
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src= 'https://ibb.co/9vybVDX1' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src= 'https://www.linkpicture.com/view.php?img=LPic5fb303478916d253153872' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### [BONUS] Interactive Prototype
 <img src= 'http://g.recordit.co/I2ZyaNiwZa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
