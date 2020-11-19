@@ -107,7 +107,48 @@ An app for students at Michigan State University to make new friends and interac
 <img src= 'http://g.recordit.co/I2ZyaNiwZa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Schema 
-[This section will be completed in Unit 9]
+**Model: Post**
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User | image author |
+   | authorName    | String | author name |
+   | profilePic    | File | author's profile picture |
+   | image         | File     | image that user posts |
+   | caption       | String   | image caption by author |
+   | createdAt     | DateTime | date when post is created (default field) |
+   
+  **Model: Comments**
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for comment by user |
+   | author        | Pointer to User | comment author |
+   | authorName    | String | author name |
+   | profilePic    | File | author's profile picture |
+   | comment       | String   | comment caption by author |
+   | createdAt     | DateTime | date when comment is created (default field) |
+   
+ **Model: Messaging**
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | authorId      | String   | unique id for the user messaging (default field) |
+   | senderId      | String   | unique id for the other user messaging (default field) |
+   | image         | array[File]     | image that user sends |
+   | message       | array[String]   | message caption by author |
+   | time     | DateTime | date when message was sent (default field) |
+   
+ **Model: Random Matching**
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| image author |
+   | image         | File     | image that user posts |
+   | caption       | String   | image caption by author |
+   | commentsCount | Number   | number of comments that has been posted to an image |
+   | likesCount    | Number   | number of likes for the post |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | updatedAt     | DateTime | date when post is last updated (default field) |
+   
 ### Models
 [Add table of models]
 ### Networking
