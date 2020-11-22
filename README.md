@@ -121,7 +121,8 @@ An app for students at Michigan State University to make new friends and interac
   **Model: Comments**
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for comment by user |
+   | userName     | String   | unique id for comment by user |
+   | name | String   | name of user |
    | author        | Pointer to User | comment author |
    | authorName    | String | author name |
    | profilePic    | File | author's profile picture |
@@ -131,7 +132,8 @@ An app for students at Michigan State University to make new friends and interac
  **Model: Messaging**
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | authorId      | String   | unique id for the user messaging (default field) |
+   | userName  | String   | unique id for the user messaging (default field) |
+   | name | String   | name of user |
    | senderId      | String   | unique id for the other user messaging (default field) |
    | image         | array[File]     | image that user sends |
    | message       | array[String]   | message caption by author |
@@ -140,14 +142,20 @@ An app for students at Michigan State University to make new friends and interac
  **Model: Random Matching**
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | image         | File     | image that user posts |
-   | caption       | String   | image caption by author |
-   | commentsCount | Number   | number of comments that has been posted to an image |
-   | likesCount    | Number   | number of likes for the post |
-   | createdAt     | DateTime | date when post is created (default field) |
-   | updatedAt     | DateTime | date when post is last updated (default field) |
+   | users   | array[String]  | unique id for the user post (default field) |
+   | alreadyMatched | dict{String, array[String] | dict of user matches | 
+   | alreadyMatchedToday | array[String] | array of users who have already been matched today | 
+   
+ **Model: Account**
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | userName | String   | unique id for the user post (default field) |
+   | password | String | password of user’s account |
+   | profileImage  | File     | user’s profile image |
+   | bio      | String   | bio by user |
+   | year | String  | grade level of user |
+   | major | String | major of user |
+
    
 ### Models
 [Add table of models]
