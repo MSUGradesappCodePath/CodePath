@@ -183,8 +183,58 @@ An app for students at Michigan State University to make new friends and interac
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
    - Sign up Screen
+     - (Create/POST) Create a new user object
+  
+       @IBAction func OnSignUp(_ sender: Any) {
+        let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
+        
+        user.signUpInBackground {(success,error) in
+            if success{
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }
+            else{
+                print("error: \(String(describing: error?.localizedDescription))")
+            }
+            
+        }
+        
+    }
+
    - Log in Screen
+    // ) Query a post where you have an author
+      @IBAction func OnSignIn(_ sender: Any) {
+        let username = usernameField.text!
+        let password = passwordField.text!
+        
+       
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            //Loogged on
+            if user != nil {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }
+            else{
+                print("error: (error?.localizedDescription)")
+            }
+        }
+    }
+    
    - Inbox Screen
+    - (Read/GET) Query all chats for user
+         ```swift
+         let query = PFQuery(className:"Chat")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(chats.count) chats.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
    - Private Messaging Screen
    - Main Screen
    - View Post Screen
