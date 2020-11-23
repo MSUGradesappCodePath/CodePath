@@ -237,6 +237,7 @@ An app for students at Michigan State University to make new friends and interac
          ```
    - Private Messaging Screen
    - Main Screen
+    - (Move/NAVIGATE) Navigate to the Login or Sign Up Screen
    - View Post Screen
    - Random Matching Screen
    - Edit Profile Screen
