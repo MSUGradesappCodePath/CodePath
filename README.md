@@ -199,7 +199,7 @@ An app for students at Michigan State University to make new friends and interac
         }
         ```
    - Log in Screen
-    - (Read/GET) Query the user account
+      - (Read/GET) Query the user account
         ```swift
           @IBAction func OnSignIn(_ sender: Any) {
             let username = usernameField.text!
