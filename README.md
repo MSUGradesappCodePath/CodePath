@@ -254,21 +254,19 @@ An app for students at Michigan State University to make new friends and interac
          }
          ```
    - Random Matching Screen
-    - (Read/GET) Query all the accounts the user has not matched with
+      - (Read/GET) Query all the accounts the user has not matched with
          ```swift
-          let query = PFQuery(className:"RandomMatch")
-          query.whereKey("username", equalTo: currentUser)
-          query.order(byDescending: "createdAt")
-          query.findObjectsInBackground { (accounts: [PFObject]?, error: Error?) in
-             if let error = error {
-                print(error.localizedDescription)
-             } else if let posts = posts {
-                print("Successfully retrieved \(posts.count) posts.")
-                // TODO: Do something with posts...
-             }
-          }
-           ```
-    - (Update/PUT) Update accounts the user has not matched with
+         let query = PFQuery(className:"RandomMatch")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let accounts = accounts {
+               print("Successfully retrieved \(accounts.count) accounts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+      - (Update/PUT) Update accounts the user has not matched with
    - Edit Profile Screen
     - (Update/PUT) Update user information (bio, name, major, year)
     - (Update/PUT) Update user profile image
