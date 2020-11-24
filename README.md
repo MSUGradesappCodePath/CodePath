@@ -200,7 +200,7 @@ An app for students at Michigan State University to make new friends and interac
     ```
    - Log in Screen
     // ) Query a post where you have an author
-    ``` swift
+    ```swift
       @IBAction func OnSignIn(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!
@@ -255,7 +255,7 @@ An app for students at Michigan State University to make new friends and interac
          ```
    - Random Matching Screen
     - (Read/GET) Query all the accounts the user has not matched with
-    ``` swift
+    ```swift
       let query = PFQuery(className:"RandomMatch")
       query.whereKey("username", equalTo: currentUser)
       query.order(byDescending: "createdAt")
@@ -267,7 +267,7 @@ An app for students at Michigan State University to make new friends and interac
             // TODO: Do something with posts...
          }
       }
-    ```
+      ```
     - (Update/PUT) Update accounts the user has not matched with
    - Edit Profile Screen
     - (Update/PUT) Update user information (bio, name, major, year)
