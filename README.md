@@ -220,20 +220,20 @@ An app for students at Michigan State University to make new friends and interac
     }
     
    - Inbox Screen
-    - (Read/GET) Query all chats for user
-         ```swift
-         let query = PFQuery(className:"Chat")
-         query.whereKey("author", equalTo: currentUser)
-         query.order(byDescending: "createdAt")
-         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
-            if let error = error { 
-               print(error.localizedDescription)
-            } else if let posts = posts {
-               print("Successfully retrieved \(chats.count) chats.")
-           // TODO: Do something with posts...
-            }
-         }
-         ```
+      - (Read/GET) Query all chats for user
+          ```swift
+           let query = PFQuery(className:"Chat")
+           query.whereKey("author", equalTo: currentUser)
+           query.order(byDescending: "createdAt")
+           query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+              if let error = error { 
+                 print(error.localizedDescription)
+              } else if let posts = posts {
+                 print("Successfully retrieved \(chats.count) chats.")
+             // TODO: Do something with posts...
+              }
+           }
+           ```
    - Private Messaging Screen
    - Main Screen
       - (Move/NAVIGATE) Navigate to the Login or Sign Up Screen
