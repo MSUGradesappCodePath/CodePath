@@ -162,7 +162,6 @@ An app for students at Michigan State University to make new friends and interac
       - (Read/GET) Query all posts where user is author
          ```swift
          let query = PFQuery(className:"Post")
-         query.whereKey("author", equalTo: currentUser)
          query.order(byDescending: "createdAt")
          query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
             if let error = error { 
@@ -237,8 +236,22 @@ An app for students at Michigan State University to make new friends and interac
          ```
    - Private Messaging Screen
    - Main Screen
-    - (Move/NAVIGATE) Navigate to the Login or Sign Up Screen
+      - (Move/NAVIGATE) Navigate to the Login or Sign Up Screen
    - View Post Screen
+      - (Read/GET) Query the post and comments
+          ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
    - Random Matching Screen
    - Edit Profile Screen
    
