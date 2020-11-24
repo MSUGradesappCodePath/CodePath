@@ -182,44 +182,44 @@ An app for students at Michigan State University to make new friends and interac
       - (Read/GET) Query logged in user object
    - Sign up Screen
      - (Create/POST) Create a new user object
-      ```
-       @IBAction func OnSignUp(_ sender: Any) {
-        let user = PFUser()
-        user.username = usernameField.text
-        user.password = passwordField.text
-        
-        user.signUpInBackground {(success,error) in
-            if success{
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            }
-            else {
-                print("error: \(String(describing: error?.localizedDescription))")
+          ``` swift
+           @IBAction func OnSignUp(_ sender: Any) {
+            let user = PFUser()
+            user.username = usernameField.text
+            user.password = passwordField.text
+
+            user.signUpInBackground {(success,error) in
+                if success{
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                }
+                else {
+                    print("error: \(String(describing: error?.localizedDescription))")
+                }
             }
         }
-    }
-    ```
+        ```
    - Log in Screen
-    // ) Query a post where you have an author
-    ```swift
-      @IBAction func OnSignIn(_ sender: Any) {
-        let username = usernameField.text!
-        let password = passwordField.text!
-        
-       
-        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
-            //Loogged on
-            if user != nil {
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+    - (Read/GET) Query the user account
+        ```swift
+          @IBAction func OnSignIn(_ sender: Any) {
+            let username = usernameField.text!
+            let password = passwordField.text!
+
+
+            PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+                //Loogged on
+                if user != nil {
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                }
+                else{
+                    print("error: (error?.localizedDescription)")
+                }
             }
-            else{
-                print("error: (error?.localizedDescription)")
-            }
-        }
-     }
-    ```
+         }
+        ```
    - Inbox Screen
       - (Read/GET) Query all chats for user
-          ```swift
+           ```swift
            let query = PFQuery(className:"Chat")
            query.whereKey("author", equalTo: currentUser)
            query.order(byDescending: "createdAt")
@@ -255,19 +255,19 @@ An app for students at Michigan State University to make new friends and interac
          ```
    - Random Matching Screen
     - (Read/GET) Query all the accounts the user has not matched with
-    ```swift
-      let query = PFQuery(className:"RandomMatch")
-      query.whereKey("username", equalTo: currentUser)
-      query.order(byDescending: "createdAt")
-      query.findObjectsInBackground { (accounts: [PFObject]?, error: Error?) in
-         if let error = error {
-            print(error.localizedDescription)
-         } else if let posts = posts {
-            print("Successfully retrieved \(posts.count) posts.")
-            // TODO: Do something with posts...
-         }
-      }
-      ```
+         ```swift
+            let query = PFQuery(className:"RandomMatch")
+            query.whereKey("username", equalTo: currentUser)
+            query.order(byDescending: "createdAt")
+            query.findObjectsInBackground { (accounts: [PFObject]?, error: Error?) in
+               if let error = error {
+                  print(error.localizedDescription)
+               } else if let posts = posts {
+                  print("Successfully retrieved \(posts.count) posts.")
+                  // TODO: Do something with posts...
+               }
+            }
+           ```
     - (Update/PUT) Update accounts the user has not matched with
    - Edit Profile Screen
     - (Update/PUT) Update user information (bio, name, major, year)
