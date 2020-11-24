@@ -234,6 +234,19 @@ An app for students at Michigan State University to make new friends and interac
            ```
    - Private Messaging Screen
       - (Read/GET) Query all messages where user is author
+          ```swift
+         let query = PFQuery(className:"Chat")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let messages = messages { 
+               print(error.localizedDescription)
+            } else if let messages = messages {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
       - (Read/GET) Query all messages where the user the current user is talking to is author
       - (Create/POST) Create a new message and send to other user
    - Main Screen
@@ -257,6 +270,7 @@ An app for students at Michigan State University to make new friends and interac
       - (Read/GET) Query all the accounts the user has not matched with
          ```swift
          let query = PFQuery(className:"RandomMatch")
+         query.whereKey("username", equalTo: currentUser)
          query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
             if let error = error { 
                print(error.localizedDescription)
