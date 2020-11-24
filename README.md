@@ -235,10 +235,11 @@ An app for students at Michigan State University to make new friends and interac
            }
            ```
    - Private Messaging Screen
+      - (Read/Put) Read messages and post new messages to the other user
    - Main Screen
       - (Move/NAVIGATE) Navigate to the Login or Sign Up Screen
    - View Post Screen
-      - (Read/GET) Query the post and comments
+      - (Read/GET) Query the individual post
           ```swift
          let query = PFQuery(className:"Post")
          query.whereKey("author", equalTo: currentUser)
