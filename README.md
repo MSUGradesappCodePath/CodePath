@@ -268,8 +268,8 @@ An app for students at Michigan State University to make new friends and interac
          ```
       - (Update/PUT) Update accounts the user has not matched with
    - Edit Profile Screen
-    - (Update/PUT) Update user information (bio, name, major, year)
-    - (Update/PUT) Update user profile image
+      - (Update/PUT) Update user information (bio, name, major, year)
+      - (Update/PUT) Update user profile image
    
 ### Models
 [Add table of models]
