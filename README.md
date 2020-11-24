@@ -180,10 +180,9 @@ An app for students at Michigan State University to make new friends and interac
       - (Create/POST) Create a new post object
    - Profile Screen
       - (Read/GET) Query logged in user object
-      - (Update/PUT) Update user profile image
    - Sign up Screen
      - (Create/POST) Create a new user object
-  
+      ```
        @IBAction func OnSignUp(_ sender: Any) {
         let user = PFUser()
         user.username = usernameField.text
@@ -193,16 +192,15 @@ An app for students at Michigan State University to make new friends and interac
             if success{
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
-            else{
+            else {
                 print("error: \(String(describing: error?.localizedDescription))")
             }
-            
         }
-        
     }
-
+    ```
    - Log in Screen
     // ) Query a post where you have an author
+    ```
       @IBAction func OnSignIn(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!
@@ -218,7 +216,7 @@ An app for students at Michigan State University to make new friends and interac
             }
         }
     }
-    
+    ```
    - Inbox Screen
       - (Read/GET) Query all chats for user
           ```swift
@@ -235,7 +233,9 @@ An app for students at Michigan State University to make new friends and interac
            }
            ```
    - Private Messaging Screen
-      - (Read/Put) Read messages and post new messages to the other user
+      - (Read/GET) Query all messages where user is author
+      - (Read/GET) Query all messages where the user the current user is talking to is author
+      - (Create/POST) Create a new message and send to other user
    - Main Screen
       - (Move/NAVIGATE) Navigate to the Login or Sign Up Screen
    - View Post Screen
@@ -254,7 +254,24 @@ An app for students at Michigan State University to make new friends and interac
          }
          ```
    - Random Matching Screen
+    - (Read/GET) Query all the accounts the user has not matched with
+    ```
+      let query = PFQuery(className:"RandomMatch")
+      query.whereKey("username", equalTo: currentUser)
+      query.order(byDescending: "createdAt")
+      query.findObjectsInBackground { (accounts: [PFObject]?, error: Error?) in
+         if let error = error {
+            print(error.localizedDescription)
+         } else if let posts = posts {
+            print("Successfully retrieved \(posts.count) posts.")
+            // TODO: Do something with posts...
+         }
+      }
+    ```
+    - (Update/PUT) Update accounts the user has not matched with
    - Edit Profile Screen
+    - (Update/PUT) Update user information (bio, name, major, year)
+    - (Update/PUT) Update user profile image
    
 ### Models
 [Add table of models]
