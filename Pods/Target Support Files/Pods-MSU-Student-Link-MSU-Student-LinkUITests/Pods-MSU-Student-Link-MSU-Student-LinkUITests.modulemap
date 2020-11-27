@@ -1,0 +1,6 @@
+framework module Pods_MSU_Student_Link_MSU_Student_LinkUITests {
+  umbrella header "Pods-MSU-Student-Link-MSU-Student-LinkUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

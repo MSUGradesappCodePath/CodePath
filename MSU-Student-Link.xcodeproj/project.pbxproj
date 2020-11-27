@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050EA870257170B000EAE0FD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050EA86F257170B000EAE0FD /* SignUpViewController.swift */; };
+		05302E2225715F1C00961F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05302E2125715F1C00961F10 /* AppDelegate.swift */; };
+		05302E2425715F1C00961F10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05302E2325715F1C00961F10 /* SceneDelegate.swift */; };
+		05302E2925715F1C00961F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05302E2725715F1C00961F10 /* Main.storyboard */; };
+		05302E2B25715F1F00961F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05302E2A25715F1F00961F10 /* Assets.xcassets */; };
+		05302E2E25715F1F00961F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05302E2C25715F1F00961F10 /* LaunchScreen.storyboard */; };
+		05302E3925715F2000961F10 /* MSU_Student_LinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05302E3825715F2000961F10 /* MSU_Student_LinkTests.swift */; };
+		05302E4425715F2000961F10 /* MSU_Student_LinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05302E4325715F2000961F10 /* MSU_Student_LinkUITests.swift */; };
+		05302E5825715FC300961F10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05302E5725715FC300961F10 /* LoginViewController.swift */; };
+		05302E5D2571601B00961F10 /* BulletinBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05302E5C2571601B00961F10 /* BulletinBoard.swift */; };
+		18B2E70B226D9505F5CD6E7B /* Pods_MSU_Student_Link.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEDB55A1414158816C7879E /* Pods_MSU_Student_Link.framework */; };
+		45B59D4E05C940F0458B1854 /* Pods_MSU_Student_Link_MSU_Student_LinkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5074D3F40B697A3DE9E501 /* Pods_MSU_Student_Link_MSU_Student_LinkUITests.framework */; };
+		BEA5ACA0DF39166ADFBFEE4A /* Pods_MSU_Student_LinkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1724C893383B68876AAE77E /* Pods_MSU_Student_LinkTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05302E3525715F2000961F10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05302E1625715F1C00961F10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05302E1D25715F1C00961F10;
+			remoteInfo = "MSU-Student-Link";
+		};
+		05302E4025715F2000961F10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05302E1625715F1C00961F10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05302E1D25715F1C00961F10;
+			remoteInfo = "MSU-Student-Link";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		050EA86F257170B000EAE0FD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		05302E1E25715F1C00961F10 /* MSU-Student-Link.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MSU-Student-Link.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05302E2125715F1C00961F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05302E2325715F1C00961F10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		05302E2825715F1C00961F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05302E2A25715F1F00961F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05302E2D25715F1F00961F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05302E2F25715F1F00961F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05302E3425715F2000961F10 /* MSU-Student-LinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSU-Student-LinkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05302E3825715F2000961F10 /* MSU_Student_LinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSU_Student_LinkTests.swift; sourceTree = "<group>"; };
+		05302E3A25715F2000961F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05302E3F25715F2000961F10 /* MSU-Student-LinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSU-Student-LinkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05302E4325715F2000961F10 /* MSU_Student_LinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSU_Student_LinkUITests.swift; sourceTree = "<group>"; };
+		05302E4525715F2000961F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05302E5725715FC300961F10 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		05302E5C2571601B00961F10 /* BulletinBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinBoard.swift; sourceTree = "<group>"; };
+		393ADB78FF83B7447BBAC309 /* Pods-MSU-Student-LinkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSU-Student-LinkTests.debug.xcconfig"; path = "Target Support Files/Pods-MSU-Student-LinkTests/Pods-MSU-Student-LinkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BEDB55A1414158816C7879E /* Pods_MSU_Student_Link.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSU_Student_Link.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A47B112F0B7905A21353E23 /* Pods-MSU-Student-Link.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSU-Student-Link.release.xcconfig"; path = "Target Support Files/Pods-MSU-Student-Link/Pods-MSU-Student-Link.release.xcconfig"; sourceTree = "<group>"; };
+		7B70F6BCC63F72FFCA7A9016 /* Pods-MSU-Student-Link-MSU-Student-LinkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSU-Student-Link-MSU-Student-LinkUITests.release.xcconfig"; path = "Target Support Files/Pods-MSU-Student-Link-MSU-Student-LinkUITests/Pods-MSU-Student-Link-MSU-Student-LinkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8DE344A1BFDD5F1A6ABFC5B5 /* Pods-MSU-Student-Link-MSU-Student-LinkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSU-Student-Link-MSU-Student-LinkUITests.debug.xcconfig"; path = "Target Support Files/Pods-MSU-Student-Link-MSU-Student-LinkUITests/Pods-MSU-Student-Link-MSU-Student-LinkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E6DD8A8918F0F74DF259FBF /* Pods-MSU-Student-Link.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSU-Student-Link.debug.xcconfig"; path = "Target Support Files/Pods-MSU-Student-Link/Pods-MSU-Student-Link.debug.xcconfig"; sourceTree = "<group>"; };
+		B103E48032F45B44D2BB80E7 /* Pods-MSU-Student-LinkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSU-Student-LinkTests.release.xcconfig"; path = "Target Support Files/Pods-MSU-Student-LinkTests/Pods-MSU-Student-LinkTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1724C893383B68876AAE77E /* Pods_MSU_Student_LinkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSU_Student_LinkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5074D3F40B697A3DE9E501 /* Pods_MSU_Student_Link_MSU_Student_LinkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSU_Student_Link_MSU_Student_LinkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05302E1B25715F1C00961F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2E70B226D9505F5CD6E7B /* Pods_MSU_Student_Link.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05302E3125715F2000961F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA5ACA0DF39166ADFBFEE4A /* Pods_MSU_Student_LinkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05302E3C25715F2000961F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B59D4E05C940F0458B1854 /* Pods_MSU_Student_Link_MSU_Student_LinkUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05302E1525715F1C00961F10 = {
+			isa = PBXGroup;
+			children = (
+				05302E2025715F1C00961F10 /* MSU-Student-Link */,
+				05302E3725715F2000961F10 /* MSU-Student-LinkTests */,
+				05302E4225715F2000961F10 /* MSU-Student-LinkUITests */,
+				05302E1F25715F1C00961F10 /* Products */,
+				2A297B54801EFF64CCA8E150 /* Pods */,
+				9A00804DD194950FA7FA9DDA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05302E1F25715F1C00961F10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05302E1E25715F1C00961F10 /* MSU-Student-Link.app */,
+				05302E3425715F2000961F10 /* MSU-Student-LinkTests.xctest */,
+				05302E3F25715F2000961F10 /* MSU-Student-LinkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05302E2025715F1C00961F10 /* MSU-Student-Link */ = {
+			isa = PBXGroup;
+			children = (
+				05302E2125715F1C00961F10 /* AppDelegate.swift */,
+				05302E2325715F1C00961F10 /* SceneDelegate.swift */,
+				05302E2725715F1C00961F10 /* Main.storyboard */,
+				05302E2A25715F1F00961F10 /* Assets.xcassets */,
+				05302E2C25715F1F00961F10 /* LaunchScreen.storyboard */,
+				05302E2F25715F1F00961F10 /* Info.plist */,
+				05302E5725715FC300961F10 /* LoginViewController.swift */,
+				05302E5C2571601B00961F10 /* BulletinBoard.swift */,
+				050EA86F257170B000EAE0FD /* SignUpViewController.swift */,
+			);
+			path = "MSU-Student-Link";
+			sourceTree = "<group>";
+		};
+		05302E3725715F2000961F10 /* MSU-Student-LinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				05302E3825715F2000961F10 /* MSU_Student_LinkTests.swift */,
+				05302E3A25715F2000961F10 /* Info.plist */,
+			);
+			path = "MSU-Student-LinkTests";
+			sourceTree = "<group>";
+		};
+		05302E4225715F2000961F10 /* MSU-Student-LinkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05302E4325715F2000961F10 /* MSU_Student_LinkUITests.swift */,
+				05302E4525715F2000961F10 /* Info.plist */,
+			);
+			path = "MSU-Student-LinkUITests";
+			sourceTree = "<group>";
+		};
+		2A297B54801EFF64CCA8E150 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E6DD8A8918F0F74DF259FBF /* Pods-MSU-Student-Link.debug.xcconfig */,
+				6A47B112F0B7905A21353E23 /* Pods-MSU-Student-Link.release.xcconfig */,
+				8DE344A1BFDD5F1A6ABFC5B5 /* Pods-MSU-Student-Link-MSU-Student-LinkUITests.debug.xcconfig */,
+				7B70F6BCC63F72FFCA7A9016 /* Pods-MSU-Student-Link-MSU-Student-LinkUITests.release.xcconfig */,
+				393ADB78FF83B7447BBAC309 /* Pods-MSU-Student-LinkTests.debug.xcconfig */,
+				B103E48032F45B44D2BB80E7 /* Pods-MSU-Student-LinkTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A00804DD194950FA7FA9DDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BEDB55A1414158816C7879E /* Pods_MSU_Student_Link.framework */,
+				ED5074D3F40B697A3DE9E501 /* Pods_MSU_Student_Link_MSU_Student_LinkUITests.framework */,
+				C1724C893383B68876AAE77E /* Pods_MSU_Student_LinkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05302E1D25715F1C00961F10 /* MSU-Student-Link */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05302E4825715F2000961F10 /* Build configuration list for PBXNativeTarget "MSU-Student-Link" */;
+			buildPhases = (
+				812A9D5DA498661CA33B2126 /* [CP] Check Pods Manifest.lock */,
+				05302E1A25715F1C00961F10 /* Sources */,
+				05302E1B25715F1C00961F10 /* Frameworks */,
+				05302E1C25715F1C00961F10 /* Resources */,
+				D97760A802212121BEF2EDAA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MSU-Student-Link";
+			productName = "MSU-Student-Link";
+			productReference = 05302E1E25715F1C00961F10 /* MSU-Student-Link.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05302E3325715F2000961F10 /* MSU-Student-LinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05302E4B25715F2000961F10 /* Build configuration list for PBXNativeTarget "MSU-Student-LinkTests" */;
+			buildPhases = (
+				2CDBD155270002E299939423 /* [CP] Check Pods Manifest.lock */,
+				05302E3025715F2000961F10 /* Sources */,
+				05302E3125715F2000961F10 /* Frameworks */,
+				05302E3225715F2000961F10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05302E3625715F2000961F10 /* PBXTargetDependency */,
+			);
+			name = "MSU-Student-LinkTests";
+			productName = "MSU-Student-LinkTests";
+			productReference = 05302E3425715F2000961F10 /* MSU-Student-LinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05302E3E25715F2000961F10 /* MSU-Student-LinkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05302E4E25715F2000961F10 /* Build configuration list for PBXNativeTarget "MSU-Student-LinkUITests" */;
+			buildPhases = (
+				7FC3314D54AF2DE463A33477 /* [CP] Check Pods Manifest.lock */,
+				05302E3B25715F2000961F10 /* Sources */,
+				05302E3C25715F2000961F10 /* Frameworks */,
+				05302E3D25715F2000961F10 /* Resources */,
+				9C7713EDF9B712865D613C98 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05302E4125715F2000961F10 /* PBXTargetDependency */,
+			);
+			name = "MSU-Student-LinkUITests";
+			productName = "MSU-Student-LinkUITests";
+			productReference = 05302E3F25715F2000961F10 /* MSU-Student-LinkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05302E1625715F1C00961F10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					05302E1D25715F1C00961F10 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					05302E3325715F2000961F10 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 05302E1D25715F1C00961F10;
+					};
+					05302E3E25715F2000961F10 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 05302E1D25715F1C00961F10;
+					};
+				};
+			};
+			buildConfigurationList = 05302E1925715F1C00961F10 /* Build configuration list for PBXProject "MSU-Student-Link" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05302E1525715F1C00961F10;
+			productRefGroup = 05302E1F25715F1C00961F10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05302E1D25715F1C00961F10 /* MSU-Student-Link */,
+				05302E3325715F2000961F10 /* MSU-Student-LinkTests */,
+				05302E3E25715F2000961F10 /* MSU-Student-LinkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05302E1C25715F1C00961F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05302E2E25715F1F00961F10 /* LaunchScreen.storyboard in Resources */,
+				05302E2B25715F1F00961F10 /* Assets.xcassets in Resources */,
+				05302E2925715F1C00961F10 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05302E3225715F2000961F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05302E3D25715F2000961F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CDBD155270002E299939423 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MSU-Student-LinkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FC3314D54AF2DE463A33477 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MSU-Student-Link-MSU-Student-LinkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		812A9D5DA498661CA33B2126 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MSU-Student-Link-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C7713EDF9B712865D613C98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MSU-Student-Link-MSU-Student-LinkUITests/Pods-MSU-Student-Link-MSU-Student-LinkUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MSU-Student-Link-MSU-Student-LinkUITests/Pods-MSU-Student-Link-MSU-Student-LinkUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MSU-Student-Link-MSU-Student-LinkUITests/Pods-MSU-Student-Link-MSU-Student-LinkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D97760A802212121BEF2EDAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MSU-Student-Link/Pods-MSU-Student-Link-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MSU-Student-Link/Pods-MSU-Student-Link-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MSU-Student-Link/Pods-MSU-Student-Link-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05302E1A25715F1C00961F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05302E5825715FC300961F10 /* LoginViewController.swift in Sources */,
+				05302E5D2571601B00961F10 /* BulletinBoard.swift in Sources */,
+				05302E2225715F1C00961F10 /* AppDelegate.swift in Sources */,
+				05302E2425715F1C00961F10 /* SceneDelegate.swift in Sources */,
+				050EA870257170B000EAE0FD /* SignUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05302E3025715F2000961F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05302E3925715F2000961F10 /* MSU_Student_LinkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05302E3B25715F2000961F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05302E4425715F2000961F10 /* MSU_Student_LinkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05302E3625715F2000961F10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05302E1D25715F1C00961F10 /* MSU-Student-Link */;
+			targetProxy = 05302E3525715F2000961F10 /* PBXContainerItemProxy */;
+		};
+		05302E4125715F2000961F10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05302E1D25715F1C00961F10 /* MSU-Student-Link */;
+			targetProxy = 05302E4025715F2000961F10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05302E2725715F1C00961F10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05302E2825715F1C00961F10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05302E2C25715F1F00961F10 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05302E2D25715F1F00961F10 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05302E4625715F2000961F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05302E4725715F2000961F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05302E4925715F2000961F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E6DD8A8918F0F74DF259FBF /* Pods-MSU-Student-Link.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MSU-Student-Link/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guptaru1.MSU-Student-Link";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05302E4A25715F2000961F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A47B112F0B7905A21353E23 /* Pods-MSU-Student-Link.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MSU-Student-Link/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guptaru1.MSU-Student-Link";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05302E4C25715F2000961F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 393ADB78FF83B7447BBAC309 /* Pods-MSU-Student-LinkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MSU-Student-LinkTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guptaru1.MSU-Student-LinkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSU-Student-Link.app/MSU-Student-Link";
+			};
+			name = Debug;
+		};
+		05302E4D25715F2000961F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B103E48032F45B44D2BB80E7 /* Pods-MSU-Student-LinkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MSU-Student-LinkTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guptaru1.MSU-Student-LinkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSU-Student-Link.app/MSU-Student-Link";
+			};
+			name = Release;
+		};
+		05302E4F25715F2000961F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE344A1BFDD5F1A6ABFC5B5 /* Pods-MSU-Student-Link-MSU-Student-LinkUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MSU-Student-LinkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guptaru1.MSU-Student-LinkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MSU-Student-Link";
+			};
+			name = Debug;
+		};
+		05302E5025715F2000961F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B70F6BCC63F72FFCA7A9016 /* Pods-MSU-Student-Link-MSU-Student-LinkUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MSU-Student-LinkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guptaru1.MSU-Student-LinkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MSU-Student-Link";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05302E1925715F1C00961F10 /* Build configuration list for PBXProject "MSU-Student-Link" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05302E4625715F2000961F10 /* Debug */,
+				05302E4725715F2000961F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05302E4825715F2000961F10 /* Build configuration list for PBXNativeTarget "MSU-Student-Link" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05302E4925715F2000961F10 /* Debug */,
+				05302E4A25715F2000961F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05302E4B25715F2000961F10 /* Build configuration list for PBXNativeTarget "MSU-Student-LinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05302E4C25715F2000961F10 /* Debug */,
+				05302E4D25715F2000961F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05302E4E25715F2000961F10 /* Build configuration list for PBXNativeTarget "MSU-Student-LinkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05302E4F25715F2000961F10 /* Debug */,
+				05302E5025715F2000961F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05302E1625715F1C00961F10 /* Project object */;
+}
