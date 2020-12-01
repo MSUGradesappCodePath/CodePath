@@ -106,6 +106,11 @@ An app for students at Michigan State University to make new friends and interac
 ### [BONUS] Interactive Prototype
 <img src= 'http://g.recordit.co/I2ZyaNiwZa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+<img src= 'http://g.recordit.co/PJvYiDtsRv.gif' title='Video Walkthrough of Logging In' width='' alt='Video Walkthrough' />
+
+<img src= 'http://g.recordit.co/Thc3vkfXMJ.gif' title='Video Walkthrough of Updating Profile' width='' alt='Video Walkthrough' />
+
+
 ## Schema 
 **Model: Post**
    | Property      | Type     | Description |
