@@ -35,9 +35,6 @@ An app for students at Michigan State University to make new friends and interac
 
 
 ### 2. Screen Archetypes
-
-* Welscome screen
-   * Asks user if they are an existing user or a new user and takes them to Log In or Sign Up accordingly
   
 * Signup screen
    * Allows user to create an account on the app after downloading it to access its features
@@ -49,8 +46,11 @@ An app for students at Michigan State University to make new friends and interac
 * Match of the Day screen
    * Shows the user who they have been matched for the day and an option to check their profile
    
-* Bulletin board for online events
+* Feed for online events
   * Allows user to view a list of all ongoing activites and reply to a thread based on whichever activity interests them.
+
+* Make post
+  * Allows the user to make a new post for the feed
     
 * View comments in a post
     * Allows user to view all the user interested in that particular event and their thoughts about it, allowing the student to make a well-informed decision if whether they want to attend the event or not.
