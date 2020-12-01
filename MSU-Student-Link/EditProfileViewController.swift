@@ -20,6 +20,22 @@ class EditProfileViewController: UIViewController {
     }
     
     @IBAction func updateButton(_ sender: Any) {
+        let user = PFUser.current()!
+        if majorTextField.text != "" {
+        user["major"] = majorTextField.text
+        }
+        if nameTextField.text != "" {
+        user["firstname"] = nameTextField.text
+        }
+        if lastNameTextField.text != "" {
+        user["lastname"] = lastNameTextField.text
+        }
+        if yearTextField.text != "" {
+        user["schoolyear"] = yearTextField.text
+        }
+        
+        user.saveInBackground()
+        
         
     }
     
