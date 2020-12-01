@@ -21,6 +21,11 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onSignUp(_ sender: Any) {
+        self.performSegue(withIdentifier: "SignupSegue", sender: nil)
+        
+    }
+    
     @IBAction func onSignIn(_ sender: Any) {
         let username = emailField.text!
         let password = passwordField.text!
