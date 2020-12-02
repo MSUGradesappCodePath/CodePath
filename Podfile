@@ -4,9 +4,11 @@
 target 'MSU-Student-Link' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+ 
   pod 'Parse'
   pod 'Alamofire', '~> 4.4'
+  pod 'AlamofireImage'
+  pod 'MessageInputBar'
   # Add additional dependencies
 
 

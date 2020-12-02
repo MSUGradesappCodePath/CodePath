@@ -110,9 +110,13 @@
                                 <rect key="frame" x="149" y="-44" width="278" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="Y7j-yw-YFc">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="Y7j-yw-YFc">
                                 <rect key="frame" x="139" y="99" width="130" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Yoi-il-wo0" appends="YES" id="9DB-xF-qwi"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2F-H7-eVY">
                                 <rect key="frame" x="13" y="-20" width="394" height="134"/>
@@ -132,20 +136,26 @@
                         <outlet property="majorField" destination="KgI-da-bds" id="0F2-bP-jIq"/>
                         <outlet property="passwordField" destination="Pfv-ik-TJw" id="maw-Qi-gs9"/>
                         <outlet property="schoolyearField" destination="K6Y-s6-Q5z" id="9Bf-4V-BM5"/>
+                        <outlet property="userProfileView" destination="Y7j-yw-YFc" id="3M4-9G-N86"/>
                         <segue destination="OlZ-d0-Teg" kind="presentation" identifier="signupSegue" id="bYm-d3-uME"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="existinguserSegue" id="6pU-u2-FOS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37k-QL-V3K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Yoi-il-wo0">
+                    <connections>
+                        <action selector="onCameraButton:" destination="keV-MM-ZiG" id="RnU-bv-C01"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2010.144927536232" y="7.3660714285714279"/>
+            <point key="canvasLocation" x="-2029" y="1"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="MSU_Student_Link" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW3-P6-0Wm">
@@ -207,7 +217,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwe-7n-WW2">
-                                <rect key="frame" x="65" y="546" width="281" height="52"/>
+                                <rect key="frame" x="65" y="558" width="281" height="40"/>
                                 <color key="backgroundColor" red="0.035341888670000002" green="0.56106072659999995" blue="0.27874714140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Login">
