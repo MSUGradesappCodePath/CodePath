@@ -289,7 +289,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNU-HA-PPc">
-                                <rect key="frame" x="77" y="264" width="260" height="57"/>
+                                <rect key="frame" x="80" y="271" width="260" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                                 <color key="textColor" systemColor="linkColor"/>
@@ -330,7 +330,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="michiganstate-desktop-01-2" translatesAutoresizingMaskIntoConstraints="NO" id="GEO-EP-vkI">
-                                <rect key="frame" x="0.0" y="56" width="414" height="146"/>
+                                <rect key="frame" x="3" y="20" width="414" height="146"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxY-6O-PxN">
@@ -355,6 +355,10 @@
                                     <segue destination="2eY-cA-WoS" kind="presentation" id="Ygr-D0-Ue2"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ada-sR-Dcm">
+                                <rect key="frame" x="138" y="129" width="145" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V0u-yq-Bo6"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -365,6 +369,7 @@
                         <outlet property="MajorLabel" destination="7Xg-Vh-qIo" id="HtZ-WY-gmz"/>
                         <outlet property="NameLabel" destination="lNU-HA-PPc" id="A3E-4l-8eG"/>
                         <outlet property="YearLabel" destination="3Jk-af-OHn" id="SSP-x1-dWw"/>
+                        <outlet property="profilePicture" destination="Ada-sR-Dcm" id="82X-XQ-OHM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AS4-1K-ICf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -376,7 +381,7 @@
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="Xd5-T0-Sns" customClass="EditProfileViewController" customModule="MSU_Student_Link" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NTC-nY-Hc6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJI-pp-uFd">
@@ -451,6 +456,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zs8-Sg-68y">
+                                <rect key="frame" x="135" y="90" width="145" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Vzt-wN-j4s" appends="YES" id="i2d-ym-vCI"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qsR-Bb-Ejl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -460,12 +473,18 @@
                         <outlet property="lastNameTextField" destination="QdL-JM-wmb" id="HNM-JB-m0Y"/>
                         <outlet property="majorTextField" destination="CeG-vw-FPn" id="cwR-Tv-cev"/>
                         <outlet property="nameTextField" destination="g3a-UD-9FM" id="4bz-wz-a8I"/>
+                        <outlet property="profilePicture" destination="Zs8-Sg-68y" id="Jid-59-OlW"/>
                         <outlet property="yearTextField" destination="2Lr-0V-PEB" id="vud-yb-tH1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Jm-gd-fpi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Vzt-wN-j4s">
+                    <connections>
+                        <action selector="onCameraButton:" destination="Xd5-T0-Sns" id="1Qt-bk-MS2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="523" y="2210"/>
+            <point key="canvasLocation" x="521.73913043478262" y="2209.8214285714284"/>
         </scene>
         <!--Create Post View Controller-->
         <scene sceneID="kRg-ez-9iF">
@@ -844,6 +863,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Ygr-D0-Ue2"/>
         <segue reference="bYm-d3-uME"/>
         <segue reference="Bcq-Zs-Kxw"/>
     </inferredMetricsTieBreakers>
