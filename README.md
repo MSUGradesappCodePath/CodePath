@@ -25,11 +25,11 @@ An app for students at Michigan State University to make new friends and interac
 
 **Required Must-have Stories**
 
-* Sign Up and Login Feature to access the app
-* Messaging feature between user and randomly connected user
-* Profile with students' name, major, year, location
-* Bulletin board and comments
-* Notification of new matched user
+[X] Sign Up and Login Feature to access the app
+[] Messaging feature between user and randomly connected user
+[X] Profile with students' name, major, year, location
+[] Bulletin board and comments
+[] Notification of new matched user
 
 **Optional Nice-to-have Stories**
 
@@ -105,6 +105,11 @@ An app for students at Michigan State University to make new friends and interac
 
 ### [BONUS] Interactive Prototype
 <img src= 'http://g.recordit.co/I2ZyaNiwZa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src= 'http://g.recordit.co/PJvYiDtsRv.gif' title='Video Walkthrough of Logging In' width='' alt='Video Walkthrough' />
+
+<img src= 'http://g.recordit.co/Thc3vkfXMJ.gif' title='Video Walkthrough of Updating Profile' width='' alt='Video Walkthrough' />
+
 
 ## Schema 
 **Model: Post**
