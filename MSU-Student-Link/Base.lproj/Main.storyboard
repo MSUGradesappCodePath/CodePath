@@ -376,7 +376,7 @@
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="Xd5-T0-Sns" customClass="EditProfileViewController" customModule="MSU_Student_Link" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NTC-nY-Hc6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJI-pp-uFd">
@@ -441,6 +441,7 @@
                                 </state>
                                 <connections>
                                     <action selector="updateButton:" destination="Xd5-T0-Sns" eventType="touchUpInside" id="RIN-0Y-YYd"/>
+                                    <segue destination="Zba-e1-ous" kind="presentation" id="Bcq-Zs-Kxw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF7-SG-zQr">
@@ -844,6 +845,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="bYm-d3-uME"/>
+        <segue reference="Bcq-Zs-Kxw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Home" width="40" height="40"/>
