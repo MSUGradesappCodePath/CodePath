@@ -17,6 +17,8 @@
 		05302E4425715F2000961F10 /* MSU_Student_LinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05302E4325715F2000961F10 /* MSU_Student_LinkUITests.swift */; };
 		05302E5825715FC300961F10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05302E5725715FC300961F10 /* LoginViewController.swift */; };
 		05302E5D2571601B00961F10 /* BulletinBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05302E5C2571601B00961F10 /* BulletinBoard.swift */; };
+		0531C75B257B21C4005E1FB8 /* PopUpWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531C75A257B21C4005E1FB8 /* PopUpWindow.swift */; };
+		0531C760257C42E7005E1FB8 /* UserMatchedPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0531C75F257C42E7005E1FB8 /* UserMatchedPopUp.xib */; };
 		05CE429025771A5100F6D90C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE428F25771A5100F6D90C /* CameraViewController.swift */; };
 		18B2E70B226D9505F5CD6E7B /* Pods_MSU_Student_Link.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEDB55A1414158816C7879E /* Pods_MSU_Student_Link.framework */; };
 		233B5E3625740DB600992B58 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233B5E3525740DB600992B58 /* ProfileViewController.swift */; };
@@ -62,6 +64,8 @@
 		05302E4525715F2000961F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05302E5725715FC300961F10 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		05302E5C2571601B00961F10 /* BulletinBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinBoard.swift; sourceTree = "<group>"; };
+		0531C75A257B21C4005E1FB8 /* PopUpWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpWindow.swift; sourceTree = "<group>"; };
+		0531C75F257C42E7005E1FB8 /* UserMatchedPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserMatchedPopUp.xib; sourceTree = "<group>"; };
 		05CE428F25771A5100F6D90C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		233B5E3525740DB600992B58 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		233B5E3A2574245800992B58 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				05CE428F25771A5100F6D90C /* CameraViewController.swift */,
 				8F9FE28C2577596000307CDF /* PostTableViewCell.swift */,
 				8F9FE29125775E7200307CDF /* CreatePostViewController.swift */,
+				0531C75A257B21C4005E1FB8 /* PopUpWindow.swift */,
+				0531C75F257C42E7005E1FB8 /* UserMatchedPopUp.xib */,
 			);
 			path = "MSU-Student-Link";
 			sourceTree = "<group>";
@@ -303,6 +309,7 @@
 			files = (
 				05302E2E25715F1F00961F10 /* LaunchScreen.storyboard in Resources */,
 				05302E2B25715F1F00961F10 /* Assets.xcassets in Resources */,
+				0531C760257C42E7005E1FB8 /* UserMatchedPopUp.xib in Resources */,
 				05302E2925715F1C00961F10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +446,7 @@
 				05302E2425715F1C00961F10 /* SceneDelegate.swift in Sources */,
 				050EA870257170B000EAE0FD /* SignUpViewController.swift in Sources */,
 				8F9FE29225775E7200307CDF /* CreatePostViewController.swift in Sources */,
+				0531C75B257B21C4005E1FB8 /* PopUpWindow.swift in Sources */,
 				8F9FE28D2577596100307CDF /* PostTableViewCell.swift in Sources */,
 				233B5E3B2574245900992B58 /* EditProfileViewController.swift in Sources */,
 				05CE429025771A5100F6D90C /* CameraViewController.swift in Sources */,
