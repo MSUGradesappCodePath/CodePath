@@ -71,8 +71,11 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         user["schoolyear"] = yearTextField.text
         }
         let imageData = profilePicture.image?.pngData()
-        let file = PFFileObject(name: "image.png", data: imageData!)
-        user["profilepicture"] = file
+        if imageData != nil{
+            let file = PFFileObject(name: "image.png", data: imageData!)
+            user["profilepicture"] = file
+        }
+        
         user.saveInBackground()
         
         

@@ -9,6 +9,7 @@ target 'MSU-Student-Link' do
   pod 'Alamofire', '~> 4.4'
   pod 'AlamofireImage'
   pod 'MessageInputBar'
+  pod 'MessageKit'
   # Add additional dependencies
 
 
