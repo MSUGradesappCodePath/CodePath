@@ -110,6 +110,9 @@ An app for students at Michigan State University to make new friends and interac
 
 <img src= 'http://g.recordit.co/Thc3vkfXMJ.gif' title='Video Walkthrough of Updating Profile' width='' alt='Video Walkthrough' />
 
+<img src= 'http://g.recordit.co/RzJgo9n02O.gif' title='Video Walkthrough of Creating posts and messging UI' width='' alt='Video Walkthrough' />
+
+
 
 ## Schema 
 **Model: Post**
