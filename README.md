@@ -20,12 +20,12 @@ An app for students at Michigan State University to make new friends and interac
 
 ## Product Spec
 
-### 1. User Stories (Required and Optional)
+### 1. User Stories
 
 **Required Must-have Stories**
 
 * Sign Up and Login Feature to access the app
-*Messaging feature between user and randomly connected user
+* Messaging feature between user and randomly connected user
 * Profile with students' name, major, year, location
 * Bulletin board and comments
 * Notification of new matched user
