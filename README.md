@@ -24,11 +24,11 @@ An app for students at Michigan State University to make new friends and interac
 
 **Required Must-have Stories**
 
-[x] Sign Up and Login Feature to access the app
-[x] Messaging feature between user and randomly connected user
-[x] Profile with students' name, major, year, location
-[x] Bulletin board and comments
-[x] Notification of new matched user
+* Sign Up and Login Feature to access the app
+*Messaging feature between user and randomly connected user
+* Profile with students' name, major, year, location
+* Bulletin board and comments
+* Notification of new matched user
 
 
 ### 2. Screen Archetypes
@@ -96,9 +96,7 @@ An app for students at Michigan State University to make new friends and interac
 ## Wireframes
 
 ### [Interactive Prototype] 
-<img src= 'http://g.recordit.co/I2ZyaNiwZa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<img src= 'http://g.recordit.co/PJvYiDtsRv.gif' title='Video Walkthrough of Logging In' width='' alt='Video Walkthrough' />
+<img src= 'http://g.recordit.co/I2ZyaNiwZa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> <img src= 'http://g.recordit.co/PJvYiDtsRv.gif' title='Video Walkthrough of Logging In' width='' alt='Video Walkthrough' />
 
 <img src= 'http://g.recordit.co/Thc3vkfXMJ.gif' title='Video Walkthrough of Updating Profile' width='' alt='Video Walkthrough' />
 
