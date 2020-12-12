@@ -11,7 +11,6 @@
 An app for students at Michigan State University to make new friends and interact with other students.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Social
 - **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as tinder or other similar apps. Functionality wouldn't be limited to mobile devices, however the viewing choice would be better on the mobile.
 - **Story:** Analyzes users' majors, activities that they are going to attend, and allows other users to join them for their activities and also allows students to be randomly connected with one another each day and supports a chat functionality increasing interactiveness among students.
@@ -25,13 +24,11 @@ An app for students at Michigan State University to make new friends and interac
 
 **Required Must-have Stories**
 
-[X] Sign Up and Login Feature to access the app
-[] Messaging feature between user and randomly connected user
-[X] Profile with students' name, major, year, location
-[] Bulletin board and comments
-[] Notification of new matched user
-
-**Optional Nice-to-have Stories**
+[x] Sign Up and Login Feature to access the app
+[x] Messaging feature between user and randomly connected user
+[x] Profile with students' name, major, year, location
+[x] Bulletin board and comments
+[x] Notification of new matched user
 
 
 ### 2. Screen Archetypes
@@ -88,7 +85,7 @@ An app for students at Michigan State University to make new friends and interac
     * After clicking on the Log In button, it takes you to the bulletin board screen 
     * Click on the messaging icon to go and see the chat history
    
-* Bulletin board ->
+* Bulletin board
     * Click on a user to add a comment
 * Pop-up for randomly matched user 
     * Chat history (to view all your chats)
@@ -98,23 +95,21 @@ An app for students at Michigan State University to make new friends and interac
 
 ## Wireframes
 
-### [BONUS] Digital Wireframes & Mockups
-<img src= 'https://lh3.googleusercontent.com/BkQwwe1lShQsjskKGamYqzpUpDToWIhoO6xdDPfIGGlEv2kFIe7tx1IcijYf1yG9OwWIMZ1VXvHrJgBlxvxJwfuzw0zIWshHSRc-ZK5fCzS7ZD76MtEed3aCAXeuqpk2wsKHkLe5mVYufiHxxHJwXuB9VYjFWFGmRug455m1Qv6dkXdx_UJDhOQ_te5_gKx5uTi0AeHUu-WUgTOJcfeXdwsIReDlDm0frM4oIMZCtnWfbvWBkwGaCdPpmoIQQibrm-tjIf-lPAcoHf8o4tWkxVd7CHShNiWPAx3kXcbb-kqY7XYlXRUauZ4ZnYRLV8isui1ER9dr-ogKNeitCggOMpTsQR4ZfSQfQnFtkr1N1HnCKI8TXRyvqVONgSxRX1q2NzkhLGOc9AukIFF2o0riYt0j9iBsfNKV8qW3feaB-W_ocm7V_xQummOkJtaidkKDhkMVTQJTtFB7dzU_OAzfXKvT17VP70V4R-8Er7vnNwOd_upELAlZbaRMTtMa7IvfJjH0i-L2Y1-czTyNcRmZrWaCCBpg0LPz0nJeyyG7WEXW6wLvqIHzPODS7tIuvzULdOeBwcu1X0i6KGwvdlgg0DML1caw2aJicc1W5wxm9OSEly_bLqjRfLLD9WdsTgV3ZkB18x9HXwp0YUJwWVnZUxtSE2xCdjwv8GMVOIMtmKoiy7Gi-6iP2ckitKNgZYg=w1177-h651-no?authuser=0' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-### [BONUS] Interactive Prototype
+### [Interactive Prototype] 
 <img src= 'http://g.recordit.co/I2ZyaNiwZa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <img src= 'http://g.recordit.co/PJvYiDtsRv.gif' title='Video Walkthrough of Logging In' width='' alt='Video Walkthrough' />
 
 <img src= 'http://g.recordit.co/Thc3vkfXMJ.gif' title='Video Walkthrough of Updating Profile' width='' alt='Video Walkthrough' />
 
-<img src= 'https://i.groupme.com/332x702.gif' title='Video Walkthrough of Getting Randomly Matched' width='' alt='Video Walkthrough' />
+<img src= 'http://g.recordit.co/xU0cNhVch4.gif' title='Video Walkthrough of Getting Randomly Matched' width='' alt='Video Walkthrough' />
 
 <img src= 'http://g.recordit.co/tTZ2arxO96.gif' title='Video Walkthrough of Creating posts and messging UI' width='' alt='Video Walkthrough' />
 
 
 
 ## Schema 
+### Models
 **Model: Post**
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
@@ -168,6 +163,10 @@ An app for students at Michigan State University to make new friends and interac
 #### List of network requests by screen
    - Bulletin board Screen
       - (Read/GET) Query all posts where user is author
+      - (Create/POST) Create a new like on a post
+      - (Delete) Delete existing like
+      - (Create/POST) Create a new comment on a post
+      - (Delete) Delete existing comment
          ```swift
          let query = PFQuery(className:"Post")
          query.order(byDescending: "createdAt")
@@ -180,10 +179,6 @@ An app for students at Michigan State University to make new friends and interac
             }
          }
          ```
-      - (Create/POST) Create a new like on a post
-      - (Delete) Delete existing like
-      - (Create/POST) Create a new comment on a post
-      - (Delete) Delete existing comment
    - Create Post Screen
       - (Create/POST) Create a new post object
    - Profile Screen
@@ -293,9 +288,3 @@ An app for students at Michigan State University to make new friends and interac
       - (Update/PUT) Update user information (bio, name, major, year)
       - (Update/PUT) Update user profile image
    
-### Models
-[Add table of models]
-### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
