@@ -119,12 +119,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        let cell = sender as! UITableViewCell
-        let indexPath = tableView.indexPath(for: cell)!
-        let post = posts[indexPath.row]
-        let commentsViewController = segue.destination as! CommentsTableViewController
-        commentsViewController.post = post
-        tableView.deselectRow(at: indexPath, animated: true)
+        if segue.identifier == "commentSegue" {
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPath(for: cell)!
+            let post = posts[indexPath.row]
+            let commentsViewController = segue.destination as! CommentsTableViewController
+            commentsViewController.post = post
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
 
 }

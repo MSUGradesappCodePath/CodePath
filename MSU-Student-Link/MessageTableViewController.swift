@@ -27,9 +27,8 @@ class MessageTableViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let user = PFUser.current()!
-        let firstname = user.value(forKey: "firstname") as? String ?? ""
-        let lastname =  user.value(forKey: "lastname") as? String ?? ""
+        let firstname = "Emily"
+        let lastname = "Gotterbe"
         let name = (firstname + " " + lastname)
         cell.textLabel?.text = name
         cell.accessoryType = .disclosureIndicator
