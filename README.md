@@ -96,11 +96,8 @@ An app for students at Michigan State University to make new friends and interac
 ## Wireframes
 
 ### [Interactive Prototype] 
-<img src= 'http://g.recordit.co/I2ZyaNiwZa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> <img src= 'http://g.recordit.co/PJvYiDtsRv.gif' title='Video Walkthrough of Logging In' width='' alt='Video Walkthrough' />
-
-<img src= 'http://g.recordit.co/Thc3vkfXMJ.gif' title='Video Walkthrough of Updating Profile' width='' alt='Video Walkthrough' />
-
-<img src= 'http://g.recordit.co/xU0cNhVch4.gif' title='Video Walkthrough of Getting Randomly Matched' width='' alt='Video Walkthrough' />
+<img src= 'http://g.recordit.co/I2ZyaNiwZa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
+<img src= 'http://g.recordit.co/PJvYiDtsRv.gif' title='Video Walkthrough of Logging In' width='' alt='Video Walkthrough' /> <img src= 'http://g.recordit.co/Thc3vkfXMJ.gif' title='Video Walkthrough of Updating Profile' width='' alt='Video Walkthrough' /> <img src= 'http://g.recordit.co/xU0cNhVch4.gif' title='Video Walkthrough of Getting Randomly Matched' width='' alt='Video Walkthrough' />
 
 <img src= 'http://g.recordit.co/tTZ2arxO96.gif' title='Video Walkthrough of Creating posts and messging UI' width='' alt='Video Walkthrough' />
 
