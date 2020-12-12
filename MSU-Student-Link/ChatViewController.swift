@@ -10,8 +10,9 @@ import MessageInputBar
 import InputBarAccessoryView
 import Parse
 struct Sender: SenderType{
-var senderId: String
-var displayName: String
+    var senderId: String
+    var displayName: String
+    var image: UIImage?
 }
 struct Message: MessageType{
     var sender: SenderType
@@ -23,11 +24,14 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
 let user = PFUser.current()!
 var messageFeed = [PFObject]()
 var messages = [MessageType]()
+
 @IBOutlet weak var textField: UITextField!
 @IBOutlet var onSendTapped: [UIButton]!
 lazy var firstname = user.value(forKey: "firstname") as? String ?? ""
 lazy var currentUser = Sender(senderId: firstname, displayName: firstname)
 let otherUser = Sender(senderId: "other", displayName: "Neymar")
+    
+    
 override func viewDidLoad() {
             super.viewDidLoad()
             messageInputBar.delegate = self
@@ -39,6 +43,16 @@ override func viewDidLoad() {
             let firstname = user.value(forKey: "firstname") as? String ?? ""
             let currentUser = Sender(senderId: firstname, displayName: firstname)
             let otherUser = Sender(senderId: "other", displayName: "Neymar")
+            let userImageFile = user["profilepicture"] as? PFFileObject
+            userImageFile?.getDataInBackground { (imageData: Data?, error: Error?) in
+                if let error = error {
+                    print(error.localizedDescription)
+                } else if let imageData = imageData {
+                    let image = UIImage(data:imageData)
+                    self.currentUser.image = image
+                }
+                
+            }
             messages.append(Message(sender: currentUser,
             messageId: "1",
             sentDate: Date().addingTimeInterval(-86400),
@@ -87,12 +101,15 @@ func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: St
     let newmessageobject = PFObject(className: "Chat")
     newmessageobject["chat_message"] = text
     //Append to messages display
-    messages.append(Message(sender: currentUser,
-    messageId: "6",
-    sentDate: Date().addingTimeInterval(-10000),
-    kind: .text(text)))
+    let newMessage = Message(sender: currentUser,
+                             messageId: "\(messages.count)",
+                             sentDate: Date().addingTimeInterval(-10000),
+                             kind: .text(text))
+    messages.append(newMessage)
+    messagesCollectionView.insertSections([messages.count - 1])
     //messages.append(text as! MessageType)
     print(messages)
+    inputBar.inputTextView.text = ""
     messagesCollectionView.messagesDataSource = self
     messagesCollectionView.messagesLayoutDelegate = self
     messagesCollectionView.messagesDisplayDelegate = self
