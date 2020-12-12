@@ -31,7 +31,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query = PFQuery(className: "Posts")
-        query.includeKey("author")
+        query.includeKeys(["author","comments","comments.author"])
         query.order(byDescending: "createdAt")
         query.limit = 20
         query.findObjectsInBackground { (posts, error) in
@@ -45,6 +45,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
         let post = posts[indexPath.row]
+        let comments = (post["comments"] as? [PFObject]) ?? []
         let user = post["author"] as! PFUser
         cell.nameLabel.text = (user["firstname"] as! String) + " " + (user["lastname"] as! String)
         cell.postContent.text = (post["content"] as! String)
@@ -52,6 +53,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         cell.profileView.af_setImage(withURL: url)
+        cell.commentNum.text = String(comments.count)
         return cell
     }
     
@@ -110,14 +112,19 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let post = posts[indexPath.row]
+        let commentsViewController = segue.destination as! CommentsTableViewController
+        commentsViewController.post = post
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
 
 }

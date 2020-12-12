@@ -28,6 +28,8 @@
 		45B59D4E05C940F0458B1854 /* Pods_MSU_Student_Link_MSU_Student_LinkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5074D3F40B697A3DE9E501 /* Pods_MSU_Student_Link_MSU_Student_LinkUITests.framework */; };
 		8F9FE28D2577596100307CDF /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9FE28C2577596000307CDF /* PostTableViewCell.swift */; };
 		8F9FE29225775E7200307CDF /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9FE29125775E7200307CDF /* CreatePostViewController.swift */; };
+		8FAEC9B82584B0D400A32394 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAEC9B72584B0D300A32394 /* CommentCell.swift */; };
+		8FAEC9BD2584B17B00A32394 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAEC9BC2584B17B00A32394 /* CommentsTableViewController.swift */; };
 		8FF920A52574E19E0098E7E3 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF920A42574E19E0098E7E3 /* FeedTableViewController.swift */; };
 		BEA5ACA0DF39166ADFBFEE4A /* Pods_MSU_Student_LinkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1724C893383B68876AAE77E /* Pods_MSU_Student_LinkTests.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +83,8 @@
 		8E6DD8A8918F0F74DF259FBF /* Pods-MSU-Student-Link.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSU-Student-Link.debug.xcconfig"; path = "Target Support Files/Pods-MSU-Student-Link/Pods-MSU-Student-Link.debug.xcconfig"; sourceTree = "<group>"; };
 		8F9FE28C2577596000307CDF /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		8F9FE29125775E7200307CDF /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		8FAEC9B72584B0D300A32394 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		8FAEC9BC2584B17B00A32394 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		8FF920A42574E19E0098E7E3 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		B103E48032F45B44D2BB80E7 /* Pods-MSU-Student-LinkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSU-Student-LinkTests.release.xcconfig"; path = "Target Support Files/Pods-MSU-Student-LinkTests/Pods-MSU-Student-LinkTests.release.xcconfig"; sourceTree = "<group>"; };
 		C1724C893383B68876AAE77E /* Pods_MSU_Student_LinkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSU_Student_LinkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +163,8 @@
 				0531C75F257C42E7005E1FB8 /* UserMatchedPopUp.xib */,
 				233B5E71257D39B100992B58 /* MessageTableViewController.swift */,
 				233B5E86257D433900992B58 /* ChatViewController.swift */,
+				8FAEC9B72584B0D300A32394 /* CommentCell.swift */,
+				8FAEC9BC2584B17B00A32394 /* CommentsTableViewController.swift */,
 			);
 			path = "MSU-Student-Link";
 			sourceTree = "<group>";
@@ -455,9 +461,11 @@
 				8F9FE29225775E7200307CDF /* CreatePostViewController.swift in Sources */,
 				0531C75B257B21C4005E1FB8 /* PopUpWindow.swift in Sources */,
 				233B5E87257D433900992B58 /* ChatViewController.swift in Sources */,
+				8FAEC9BD2584B17B00A32394 /* CommentsTableViewController.swift in Sources */,
 				8F9FE28D2577596100307CDF /* PostTableViewCell.swift in Sources */,
 				233B5E3B2574245900992B58 /* EditProfileViewController.swift in Sources */,
 				05CE429025771A5100F6D90C /* CameraViewController.swift in Sources */,
+				8FAEC9B82584B0D400A32394 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
